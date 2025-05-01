@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | [Rohit Yadav]</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #373b44, #4286f4);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .btn-custom {
+      background: white;
+      color: #4286f4;
+      padding: 10px 25px;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .badge-skill {
+      background-color: #4286f4;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      display: inline-block;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .social-icons i {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4">Hi, I'm Rohit Yadav</h1>
+      <p class="lead">Full Stack Developer</p>
+      <a href="#contact" class="btn btn-custom mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container" data-aos="fade-right">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p>I'm a self-driven full stack developer focused on building dynamic, responsive web apps using Python, Django, and modern front-end technologies. Passionate about problem-solving, product design, and user-centric development.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="./rohit pi.jpg" alt="about" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="glass-card p-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQflrwrkaCtIy5AyzVK8WWWqhNrTZAMC1W9aA&s" class="img-fluid rounded" alt="Attera">
+            <h5 class="mt-3">ATTERA - Handmade Skincare</h5>
+            <p>An e-commerce site for handmade skincare and beauty products built with HTML, CSS, and Bootstrap.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Site</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-card p-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLbaN65UbHidyCFPbXAbfff7VWd2zoQlWSFw&s" class="img-fluid rounded" alt="Jo Junction">
+            <h5 class="mt-3">Journey Junction - Travel website</h5>
+            <p>A travelling website which will help you decide your next destination place.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Site</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="glass-card p-3">
+            <img src="https://images-cdn.ubuy.qa/665b892d33a9466e3b0ae4cd-daviky-smart-pill-organizer-with-alarm.jpg" class="img-fluid rounded" alt="Project 3">
+            <h5 class="mt-3">Smart Medicine Box</h5>
+            <p>IoT-enabled device for scheduled medicine delivery controlled via mobile, built using embedded tech and software integration.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="skills" class="py-5 text-center">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="section-title">Skills</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="50" />
+          <p class="mt-2">HTML</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="50" />
+          <p class="mt-2">CSS</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="50" />
+          <p class="mt-2">JavaScript</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50" />
+          <p class="mt-2">Bootstrap</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50" />
+          <p class="mt-2">Python</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="50" />
+          <p class="mt-2">Django</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="50" />
+          <p class="mt-2">SQL</p>
+        </div>
+        <div class="col-4 col-md-2">
+          <img src="https://img.icons8.com/ios-filled/50/api.png" alt="REST APIs" width="50" />
+          <p class="mt-2">REST APIs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-5 bg-light">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="card shadow-lg p-4 border-0" style="max-width: 450px; width: 100%; border-radius: 20px;" data-aos="fade-up">
+        <h3 class="text-center mb-4 text-primary">
+          <i class="fas fa-envelope-open-text me-2"></i>Contact Me
+        </h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Your Name</label>
+            <input type="text" class="form-control rounded-4" id="name" placeholder="e.g. Rohit Sharma" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control rounded-4" id="email" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control rounded-4" id="message" rows="4" placeholder="Write something nice..." required></textarea>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary rounded-pill fw-bold">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="text-center">
+    <p>© 2025 Rohit Yadav | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://github.com/rocky2106"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rohit-yadav-a41452331/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/rockie_rohit21"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
